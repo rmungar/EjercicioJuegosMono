@@ -74,16 +74,16 @@ class GameService() {
         return gameList
     }
 
-    fun DeleteGame(gameName: String){
-        val nameFilter = Filters.eq("titulo", gameName)
-        val exists = collection.find(nameFilter).firstOrNull()
-        if(exists == null){
-            throw Exception("Este juego no existe.")
+    fun DeleteGame(genre: String){
+        val genreFilter = Filters.eq("genero", genre)
+        val exists = collection.find(genreFilter)
+        if(exists.toList().isEmpty()){
+            throw Exception("Este género no existe.")
         }
         else{
-            val result = collection.deleteOne(exists)
+            val result = collection.deleteMany(genreFilter)
             if (result.deletedCount > 0){
-                println("$gameName borrado correctamente.")
+                println("$genre borrado correctamente.")
             }
         }
     }

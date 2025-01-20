@@ -142,17 +142,17 @@ class GameController() {
     }
 
     fun DeleteGame(){
-        var gameName = ""
-        while(gameName == ""){
-            print("Ingrese el título del juego > ")
-            gameName = readln()
+        var genre = ""
+        while(genre == ""){
+            print("Ingrese el género del juego > ")
+            genre = readln()
             println()
-            if(gameName == "" || gameName == " "){
-                println("Título no válido.")
+            if(genre == "" || genre == " "){
+                println("Género no válido.")
             }
             println()
         }
-        return gameService.DeleteGame(gameName)
+        return gameService.DeleteGame(genre)
     }
 
 
