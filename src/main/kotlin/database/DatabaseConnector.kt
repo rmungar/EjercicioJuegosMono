@@ -13,6 +13,7 @@ object DatabaseConnector {
         val client = MongoClients.create(connectionString)
 
 
+
     }
 
 
