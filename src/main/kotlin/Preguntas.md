@@ -11,4 +11,4 @@
 ## c) ¿Cómo solucionarías el problema de la inconsistencia de datos en una base de datos documental? (El hecho de que en los documentos de una colección no sea obligatorio seguir un esquema único)
 
     Considero que una de las soluciones más efectivas sería llevar a cabo validaciones dentro de la aplicación para que las estructuras cumplan con un mínimo de consistencia. Esta solución es muy tediosa y laborosa,
-    pero permitiría llevar a cabo su proposito.
+    pero permitiría llevar a cabo su propósito.
